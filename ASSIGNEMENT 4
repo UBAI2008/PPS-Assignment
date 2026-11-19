@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    int a[3][2], b[3][2], result[3][2], n, i, j;
+
+    printf("Enter Your First Matrix Value: \n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 2; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+
+    printf("Enter Your Second Matrix Values:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 2; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+
+    printf("\n First Matrix Elements \n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%d\t", a[i][j]);
+        }
+        printf("\n");
+    }
+
+    printf("\n Second Matrix Elements \n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%d\t", b[i][j]);
+        }
+        printf("\n");
+    }
+
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 2; j++) {
+            result[i][j] = a[i][j] + b[i][j];
+        }
+    }
+
+    printf("\nAddition of Two Matrices: \n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 2; j++) {
+            printf("%d\t", result[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
